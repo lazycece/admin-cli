@@ -1,0 +1,30 @@
+
+# log config
+debug: true
+trace: false
+logging:
+  level:
+    root: info
+    com.lazycece: DEBUG
+
+# mongo config
+mongodb:
+  mongo-default:
+    host:
+    port: 40000
+    database: admindb
+    username: admin
+    password: admin123
+  mongo-log:
+    host:
+    port: 40000
+    database: admindb_log
+    username: admin
+    password: admin123
+
+#upload file config
+upload-file:
+  file-path: /home/staticweb/reusable-admin/
+  root-url:  http://127.0.0.1/staticweb/reusable-admin/
+  inner-ip: 172.16.156.140
+  outer-ip: 127.0.0.1

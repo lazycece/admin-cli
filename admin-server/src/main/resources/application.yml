@@ -1,0 +1,28 @@
+
+server:
+  port: 8090
+  tomcat:
+    accept-count: 200
+    max-connections: 400
+    max-threads: 500
+    accesslog:
+      directory: ../logs/tomcat
+      prefix: admin_log
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    aggressive-lazy-loading: true
+    use-generated-keys: true
+
+# ==== define own log path ===
+my:
+  log:
+    path: ../logs/admin
+    file: admin-server
+
+spring:
+  profiles:
+    active: dev
+
