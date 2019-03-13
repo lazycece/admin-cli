@@ -17,6 +17,7 @@
     <modules>
         <module>admin-common</module>
         <module>admin-server</module>
+        <module>admin-dict</module>
     </modules>
 
     <properties>
@@ -29,6 +30,7 @@
         <maven.compiler.plugin.version>4.0.0</maven.compiler.plugin.version>
         <!-- attach-->
         <spring.version>5.1.2.RELEASE</spring.version>
+        <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
@@ -37,6 +39,13 @@
                 <groupId>com.auth0</groupId>
                 <artifactId>java-jwt</artifactId>
                 <version>3.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
