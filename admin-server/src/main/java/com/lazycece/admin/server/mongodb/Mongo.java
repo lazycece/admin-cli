@@ -1,10 +1,10 @@
 package com.lazycece.admin.server.mongodb;
 
+import com.lazycece.admin.server.mongodb.exception.QueryException;
 import com.mongodb.WriteConcern;
 import com.mongodb.client.result.UpdateResult;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.senseframework.support.orm.mongodb.exception.QueryException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Sort;
